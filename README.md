@@ -1,7 +1,7 @@
 <!-- HEADER PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/EduardoPuglisevich/Aplicaciones-de-Data-Science.git">
-    <img src="img/upc_Logo.png" alt="Logo UPC" width="80" height="80">
+    <img src="img/UPC_logo.png" alt="Logo UPC" width="80" height="80">
   </a>
 
   <h3 align="center"> Aplicaciones-de-Data-Science-CC92</h3>
