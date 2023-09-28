@@ -22,5 +22,5 @@
 ## Integrantes
 
 - Samuel Cano (U202116508@upc.edu.pe) 🐱
-- Eduardo Puglisevic (U202115535@upc.edu.pe)
-- Nicolás Guerrero (U20201e850@upc.edu.pe)
+- Eduardo Puglisevich (U20201e850@upc.edu.pe)
+- Nicolás Guerrero (U202115535@upc.edu.pe)
