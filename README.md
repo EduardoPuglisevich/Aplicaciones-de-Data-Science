@@ -24,7 +24,8 @@
   <br/>
 </div>
 <!-- CONCLUSIONES -->
-# Conclusiones
+<hr/>
+<h3>Conclusiones</h4>
 
 - Para concluir con esta investigación, podemos mencionar que se han obtenido los resultados esperados; puesto que, para el sistema de clasificación, logramos obtener métricas superiores al 90% en los casos de prueba, destacando el modelo de Naive Bayes y Regresión Logística. Sin embargo, consideramos que dicha puntuación puede ser mejorada si se logra realizar una mejor limpieza de los datos de entrada, ya que sería mucho mejor si solo entrenará con datos de un solo idioma, además que podríamos implementar otros algoritmos como las redes neuronales para corroborar y comprobar su rendimiento.
 - Por otro lado, para el modelo de recomendación, consideramos que logró su objetivo, ya que logra brindar recomendaciones que presentan temas de interés similares o que pertenecen a la misma facultad del trabajo brindado. No obstante, consideramos que aún podemos afinar más las recomendaciones, ya que existen casos en los que las recomendaciones brindadas se alejan demasiado de la tesis que se le brinda al sistema. Para solucionar esto, pensamos que sería óptimo incrementar la cantidad de datos del dataset, así como buscar nuevos algoritmos que puedan hallar las similitudes entre dos textos de mejor manera.
