@@ -21,6 +21,14 @@
   </p>
   <br/>
   <a href="https://docs.google.com/document/d/1ZLV04htsHfDt8a1REZJzgE-mr9IwTQdOw6Zph7msCbU/edit?usp=sharing" target="_blank"><strong>Para conocer la investigación del proyecto dar click</strong></a>
+  <br/>
+  <h4>Conclusiones</h4>
+  <ul>
+    <li>Para concluir con esta investigación, podemos mencionar que se han obtenido los resultados esperados; puesto que, para el sistema de clasificación, logramos obtener métricas superiores al 90% en los casos de prueba, destacando el modelo de Naive Bayes y Regresión Logística. Sin embargo, consideramos que dicha puntuación puede ser mejorada si se logra realizar una mejor limpieza de los datos de entrada, ya que sería mucho mejor si solo entrenará con datos de un solo idioma, además que podríamos implementar otros algoritmos como las redes neuronales para corroborar y comprobar su rendimiento.</li>
+    <li>Por otro lado, para el modelo de recomendación, consideramos que logró su objetivo, ya que logra brindar recomendaciones que presentan temas de interés similares o que pertenecen a la misma facultad del trabajo brindado. No obstante, consideramos que aún podemos afinar más las recomendaciones, ya que existen casos en los que las recomendaciones brindadas se alejan demasiado de la tesis que se le brinda al sistema. Para solucionar esto, pensamos que sería óptimo incrementar la cantidad de datos del dataset, así como buscar nuevos algoritmos que puedan hallar las similitudes entre dos textos de mejor manera.
+</li>
+    <li>Finalmente, para investigaciones futuras, nos gustaría poder implementar estos sistemas de clasificación y recomendación en datasets mucho más grandes y poder categorizar los trabajos de investigación en etiquetas de interés, algo similar a extraer las palabras claves de un texto y clasificarlo en clases mucho más específicas, como podría ser por carrera o por temática. Con la finalidad de mejorar el acceso a la información y acortar los tiempos que le toma a un estudiante promedio encontrar trabajos académicos que le puedan ayudar en su vida universitaria. </li>
+  </ul>
 </div>
 
 <!-- TEAM MEMBERS -->
