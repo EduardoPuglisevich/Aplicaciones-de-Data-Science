@@ -7,7 +7,7 @@
   <h3 align="center"> Aplicaciones-de-Data-Science-CC92</h3>
 
   <p align="center">
-    Modelo de clasificación de tesis de pregrado UPC
+    Modelo de clasificación y recomendación de tesis de pregrado UPC
     <br/>
     <a href=""><strong>Explore the docs »</strong></a>
     <br/>
@@ -16,6 +16,11 @@
     <br/>
     Patricia Daniela Reyes Silva
   </p>
+  <p align="center">
+    Objetivo: Diseñar un modelo de clasificación para clasificar trabajos académicos de la UPC y diseñar un modelo de recomendación para poder obtener textos similares a uno seleccionado.
+  </p>
+  <br/>
+  <a href="https://docs.google.com/document/d/1ZLV04htsHfDt8a1REZJzgE-mr9IwTQdOw6Zph7msCbU/edit?usp=sharing" target="_blank"><strong>Para conocer la investigación del proyecto dar click</strong></a>
 </div>
 
 <!-- TEAM MEMBERS -->
