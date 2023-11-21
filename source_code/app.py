@@ -16,9 +16,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 app = Flask(__name__, template_folder="templates/")
 path = "./data/tesis_data.csv"
-dfTesis = pd.read_csv(path, delimiter=',')  
+dfTesis = pd.read_csv(path, delimiter=',')   
 path = "./data/normalized_data.csv"
-dfContent = pd.read_csv(path, delimiter=',')  
+dfNormalized = pd.read_csv(path, delimiter=',')  
 dictCarrera = dfTesis.groupby('Facultad')['Carrera'].unique().apply(list).to_dict()
 dictTesis = dfTesis.groupby('Carrera')['Titulo'].unique().apply(list).to_dict()
 modelo1 = joblib.load("./data/modelo_entrenado_KNNC.pkl")
@@ -47,12 +47,12 @@ def normalize(text1,text2):
     return text1, text2
 
 def recommend_function(title,model):
-    dfModel = dfContent.copy()
+    dfModel = dfNormalized.copy()
     categorical_pipe = Pipeline([
         ('encoder', OneHotEncoder(drop = 'first'))
         ])
     col_transf = ColumnTransformer([
-        ('categoric', categorical_pipe, dfContent.select_dtypes('object').columns.tolist())
+        ('categoric', categorical_pipe, dfModel.select_dtypes('object').columns.tolist())
         ])
     col_transf_fit = col_transf.fit(dfModel)
     text_filtered_transf = col_transf_fit.transform(dfModel)
@@ -63,8 +63,9 @@ def recommend_function(title,model):
         dif, ind = modelo1.kneighbors(text_filtered_transf[id])
     else:
         dif, ind = modelo2.kneighbors(text_filtered_transf[id])
-    for e in ind[0][1:]:
-        recommendations.append(str(dfTesis.loc[e]["Titulo"]))
+    for e in ind[0][0:]:
+        if e != id:
+            recommendations.append(str(dfTesis.loc[e]["Titulo"]))
     return recommendations
 
 def classify_function(title,summary,model):
@@ -72,7 +73,7 @@ def classify_function(title,summary,model):
     title = [title]
     summary, title = normalize(summary,title)
     vectorizer = CountVectorizer(max_features=5200, min_df=3)
-    copia = dfContent["Resumen normalizado"].values.tolist().copy()
+    copia = dfNormalized["Resumen normalizado"].values.tolist().copy()
     copia.append(summary[0])
     copia = vectorizer.fit_transform(copia)
     test = copia.toarray()[-1]
@@ -96,7 +97,6 @@ def recommendation():
         title = request.form.get('title')
         modelo_seleccionado = request.form.get('modelo')
         result = recommend_function(title,modelo_seleccionado)[1:]
-        print("Modelo seleccionado:", modelo_seleccionado)
     return render_template("recommendation.html", result = result,title=title)
 
 @app.route("/classifier")
