@@ -22,6 +22,8 @@
   <br/>
   <a href="https://docs.google.com/document/d/1ZLV04htsHfDt8a1REZJzgE-mr9IwTQdOw6Zph7msCbU/edit?usp=sharing" target="_blank"><strong>Para conocer la investigación del proyecto dar click</strong></a>
   <br/>
+  <a href="https://dataappweb-production.up.railway.app" target="_blank"><strong>Link app web</strong></a>
+  <br/>
 </div>
 <!-- CONCLUSIONES -->
 
